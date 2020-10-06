@@ -469,7 +469,7 @@ body, html {
     			.attr('height',function(d){
 				return Map_Height - yBarScale(d["deaths"]);
 				})
-				.style('fill', "rgb(200,250,0)");
+				.style('fill', "rgb(200,0,0)");
 			
 			update
 
@@ -523,7 +523,7 @@ body, html {
         
           var xagGrps = d3.scale.ordinal().rangeRoundBands([300, bar2Width], .1);   // x axis for groups
 		  var yagDeaths = d3.scale.linear().range([bar2height,Map_Height+100]);	 // y axis for percentage deaths
-	      //var color = d3.scale.ordinal().range(["#fc4e2a","#756bb1"]);        // color 1 for cholera deaths, color2 for population
+	      
 		
           xagGrps.domain(agGroups);
           yagDeaths.domain([0, 40]);
